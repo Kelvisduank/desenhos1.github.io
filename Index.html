@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script> <!--o ASYNC é pra garantir que o js so vai rodar depois que o html carregar rsrsr-->
 </head>
 <body>
-    oier
-    <script src="script.js"></script>
-    oier
+    
+    <div class="container"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes hide">
+            <span class="pergunta">pergunta?</span>
+            <div class="container-de-respostas">
+                <button class="botao resposta">Resposta 1</button>
+                <button class="botao resposta">Resposta 2</button>
+                <button class="botao resposta">Resposta 3</button>
+                <button class="botao resposta">Resposta 4</button>
+            </div>
+        </div>
+        <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+            <button class="botao-comecar botao">Começar!</button>
+            <button class="botao-proxima botao hide">Proxima Pergunta</button>
+            
+        </div>
+    </div> 
+    
 </body>
 </html>
