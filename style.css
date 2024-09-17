@@ -74,3 +74,138 @@ body{
 .hide{
     display: none;
 }
+
+/* Estilos básicos do cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    max-height: 50px; /* Ajuste conforme necessário */
+}
+
+.menu {
+    display: none; /* Oculta o menu para telas menores */
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-mobile {
+    display: none; /* Oculta o menu móvel por padrão */
+}
+
+.btn-mobile {
+    display: none; /* Oculta o botão do menu móvel por padrão */
+}
+
+/* Estilos para telas grandes */
+@media (min-width: 768px) {
+    .menu {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .btn-mobile {
+        display: none;
+    }
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .btn-mobile {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-mobile ul {
+        display: none; /* Oculta o menu móvel por padrão */
+        position: absolute;
+        top: 60px; /* Ajuste conforme necessário */
+        right: 0;
+        background-color: #333;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .menu-mobile ul.show {
+        display: block;
+    }
+
+    .menu-mobile ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Estilos básicos para o quiz */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pergunta {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.container-de-respostas {
+    display: flex;
+    flex-direction: column;
+}
+
+.botao {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+
+.botao-comecar, .botao-proxima {
+    display: block;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
