@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script> <!--o ASYNC é pra garantir que o js so vai rodar depois que o html carregar rsrsr-->
+</head>
+
+<body>
+    <!-- Cabeçalho com título e botão de reiniciar teste -->
+    <header>
+        <div class="logo">
+            <img src="" alt="Logo"> <!-- Substitua logo.png pelo caminho da sua imagem -->
+        </div>
+        <div class="header-title">
+            <h1>Quiz</h1>
+        </div>
+        <div class="btn-mobile">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
+    </header>
+    
+    <!-- Menu móvel -->
+    <nav class="menu-mobile">
+        <ul>
+            <li><a href="#" onclick="startQuiz()">Iniciar Quiz</a></li>
+            <li><a href="#" onclick="showResults()">Resultados</a></li>
+            <li><a href="#" onclick="resetQuiz()">Reiniciar</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes hide">
+            <span class="pergunta">pergunta?</span>
+            <div class="container-de-respostas" id="firstQuestion">
+                <button class="botao resposta" onclick="answer(this.value)" value="1">Resposta 1</button>
+                <button class="botao resposta" onclick="answer(this.value)" value="2">Resposta 2</button>
+                <button class="botao resposta" onclick="answer(this.value)" value="3">Resposta 3</button>
+                <button class="botao resposta" onclick="answer(this.value)" value="4">Resposta 4</button>
+            </div>
+        </div>
+        <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+            <button class="botao-comecar botao">Começar!</button>
+            <button class="botao-proxima botao hide">Proxima Pergunta</button>
+            
+        </div>
+    </div> 
+    <script src="script.js" async></script>
+</body>
+</html>
