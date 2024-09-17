@@ -12,11 +12,11 @@
     <div class="container"> <!--Bordinha branca que fica envolta das perguntas-->
         <div class="container-de-questoes hide">
             <span class="pergunta">pergunta?</span>
-            <div class="container-de-respostas">
-                <button class="botao resposta">Resposta 1</button>
-                <button class="botao resposta">Resposta 2</button>
-                <button class="botao resposta">Resposta 3</button>
-                <button class="botao resposta">Resposta 4</button>
+            <div class="container-de-respostas" id="firstQuestion">
+                <button class="botao resposta" onclick="answer(this.value)" value="1">Resposta 1</button>
+                <button class="botao resposta" onclick="answer(this.value)" value="2">Resposta 2</button>
+                <button class="botao resposta" onclick="answer(this.value)" value="3">Resposta 3</button>
+                <button class="botao resposta" onclick="answer(this.value)" value="4">Resposta 4</button>
             </div>
         </div>
         <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
