@@ -69,10 +69,6 @@ body{
 }
 .botao:hover{
     filter:brightness(0.8);/*deixa a cor mais escura quando passa  o mouse*/
-
-}
-.hide{
-    display: none;
 }
 
 .container-fase-2{
@@ -93,4 +89,8 @@ body{
     align-items: center;
 
     gap: 24px
+}
+
+.hide{
+    display: none;
 }
