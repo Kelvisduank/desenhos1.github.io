@@ -69,27 +69,245 @@ body{
 }
 .botao:hover{
     filter:brightness(0.8);/*deixa a cor mais escura quando passa  o mouse*/
+
 }
 
-.container-fase-2{
+
+.container-de-respostas1 {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mesma configuração para o segundo conjunto de respostas */
+    gap: 16px;
+}
+
+.container1{
+    background-color: #121214;
+    width: 98%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    gap: 24px
 }
 
-.container-fase-3{
+
+
+
+.container-de-respostas1{
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*  define o número e o tamanho das colunas em um contêiner de grade CSS. simplificando, quero 2 colunas com o mesmo tamanho*/
+
+    gap: 16px /* jeito moderno de dar espacçamento sem tanta burocracia kkkkkkk*/
+}
+
+
+
+
+.container-de-respostas2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mesma configuração para o segundo conjunto de respostas */
+    gap: 16px;
+}
+
+.container2{
+    background-color: #121214;
+    width: 98%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    gap: 24px
 }
+
+.container-de-respostas3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mesma configuração para o segundo conjunto de respostas */
+    gap: 16px;
+}
+
+.container3{
+    background-color: #121214;
+    width: 98%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-de-respostas4 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mesma configuração para o segundo conjunto de respostas */
+    gap: 16px;
+}
+
+.container4{
+    background-color: #121214;
+    width: 98%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container-de-respostas5 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mesma configuração para o segundo conjunto de respostas */
+    gap: 16px;
+}
+
+.container5{
+    background-color: #121214;
+    width: 98%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container-de-respostas6 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mesma configuração para o segundo conjunto de respostas */
+    gap: 16px;
+}
+
+.container6{
+    background-color: #121214;
+    width: 98%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container-de-respostas7 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mesma configuração para o segundo conjunto de respostas */
+    gap: 16px;
+}
+
+.container7{
+    background-color: #121214;
+    width: 98%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container-de-respostas8 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mesma configuração para o segundo conjunto de respostas */
+    gap: 16px;
+}
+
+.container8{
+    background-color: #121214;
+    width: 98%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-de-respostas9 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mesma configuração para o segundo conjunto de respostas */
+    gap: 16px;
+}
+
+.container9{
+    background-color: #121214;
+    width: 98%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 
 .hide{
     display: none;

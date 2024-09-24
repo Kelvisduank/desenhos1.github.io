@@ -1,0 +1,138 @@
+const $botaoComecar = document.querySelector(".botao-comecar")
+const $containerdequestoes = document.querySelector(".container-de-questoes")
+const $proxima = document.querySelector(".botao-proxima botao hide")
+const $proximafase = document.querySelector(".container-de-questoes1")
+var passou = false
+const $botaopassar = document.querySelector(".botao-proxima")
+
+/*teste { */
+
+
+const $container1 = document.querySelector("container1 hide") 
+
+/*teste } */
+$botaoComecar.addEventListener("click", startGame)
+
+function startGame(){
+    $botaoComecar.classList.add("hide")
+    $containerdequestoes.classList.remove("hide")
+}
+
+// verifica resposta
+function answer(n){
+    //alert(n) n --> é o value do button clicado.
+    if (n == 1){
+        alert("correto")
+        passou = true;
+        $botaopassar.classList.remove("hide")
+    }else{
+        alert("errou")
+        passou = false;
+        
+    }
+
+}   
+
+function nextlevel(){
+    
+    $containerdequestoes.classList.add("hide")
+    
+    }     
+    
+    if(passou == "true")
+        {
+        nextlevel()
+        $container1.classList.remove("hide")
+        $proximafase.classList.remove("hide")
+        $botaopassar.classList.add("hide")
+
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    errrp 2
+    
+// Função para ir para a próxima pergunta
+function nextlevel() {
+   
+    $container.classList.add("hide")
+    $containerdequestoes.classList.add("hide") // Esconde o primeiro container
+    $container1.classList.remove("hide") // Mostra o segundo container
+    $proximafase.classList.remove("hide")
+    $botaopassar.classList.add("hide")
+    $containerdequestoes1.classList.remove("hide")
+
+}
+if (passou = true) {
+nextlevel()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script 3 
+
+function answer1(n){
+    if (n == 3){
+        alert("Acertou")
+        $botaopassar.classList.remove("hide")
+       
+    }           
+    else{
+        alert("errou")
+        passou = false
+
+    }
+}

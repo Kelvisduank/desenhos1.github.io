@@ -1,30 +1,337 @@
 const $botaoComecar = document.querySelector(".botao-comecar")
-const $containerdequestoes = document.querySelector(".container-de-questoes")
-const $containerfase2 = document.querySelector(".container-fase-2")
-const $containerfase3 = document.querySelector(".container-fase-3")
-
-// array de pontuação
-var pontos = []
-
-// esconde as perguntas das fases 2 e 3
-$containerfase2.classList.add("hide")
-$containerfase3.classList.add("hide")
-
+const $containerdequestoes = document.querySelector(".container-de-questoes") // ok
+const $botaopassar = document.querySelector(".botao-proxima")
+const $container1 = document.querySelector(".container1") // Corrigido o seletor
+//const $proximafase = document.querySelector(".container-de-questoes1") // Corrigido o seletor
+var passou = false
+const $container = document.querySelector(".container")
+const $containerdequestoes1 = document.querySelector(".container-de-questoes1")
+const $botaopassar1 = document.querySelector(".botao-proxima1")
+const $container2 = document.querySelector(".container2")
+const $containerdequestoes2 = document.querySelector(".container-de-questoes2")
 $botaoComecar.addEventListener("click", startGame)
+const $botaopassar2 = document.querySelector(".botao-proxima2")
 
-function startGame(){
+
+const $botaopassar3 = document.querySelector(".botao-proxima3")
+const $containerdequestoes3 = document.querySelector(".container-de-questoes3")
+const $container3 = document.querySelector(".container3")
+
+const $botaopassar4 = document.querySelector(".botao-proxima4")
+const $containerdequestoes4 = document.querySelector(".container-de-questoes4")
+const $container4 = document.querySelector(".container4")
+
+const $botaopassar5 = document.querySelector(".botao-proxima5")
+const $containerdequestoes5 = document.querySelector(".container-de-questoes5")
+const $container5 = document.querySelector(".container5")
+
+const $botaopassar6 = document.querySelector(".botao-proxima6")
+const $containerdequestoes6 = document.querySelector(".container-de-questoes6")
+const $container6 = document.querySelector(".container6")
+
+const $botaopassar7 = document.querySelector(".botao-proxima7")
+const $containerdequestoes7 = document.querySelector(".container-de-questoes7")
+const $container7 = document.querySelector(".container7")
+
+const $botaopassar8 = document.querySelector(".botao-proxima8")
+const $containerdequestoes8 = document.querySelector(".container-de-questoes8")
+const $container8 = document.querySelector(".container8")
+
+const $botaopassar9 = document.querySelector(".botao-proxima9")
+const $containerdequestoes9 = document.querySelector(".container-de-questoes9")
+const $container9 = document.querySelector(".container9")
+
+
+$container3.classList.add("hide")
+$container4.classList.add("hide")
+$container5.classList.add("hide")
+$container6.classList.add("hide")
+$container7.classList.add("hide")
+$container8.classList.add("hide")
+$container9.classList.add("hide")
+
+
+$container2.classList.add("hide")
+$container1.classList.remove("hide")
+$container.classList.remove("hide")
+$container1.classList.add("hide")
+
+function startGame() {
     $botaoComecar.classList.add("hide")
     $containerdequestoes.classList.remove("hide")
+    $container1.classList.add("hide")
+    
 }
 
-// verifica resposta
-function answer(n){
-    //alert(n) n --> é o value do button clicado.
-    if (n == 1){
-        alert("correto")
-        pontos.push(10)
-    }else{
-        alert("errou")
+// Verifica resposta
+function answer(n) {
+    if (n == 1) {
+        alert("Correto")
+        passou = true
+        $botaopassar.classList.remove("hide")
+    } else {
+        alert("Errou")
+        passou = false
     }
-    alert(`Você fez ${pontos[pontos.length -1]} pontos`)
-}        
+}
+
+function nextlevel(passar){    
+       
+    //sumir fase 1
+    $containerdequestoes.classList.add("hide")
+    $container.classList.add("hide")
+
+
+        $containerdequestoes1.classList.remove("hide")
+        
+
+        //passar fase 2
+        $container1.classList.remove("hide")
+
+    
+}
+
+function answer1(n1){
+    if (n1 == 3){
+        alert("Acertou")
+        $botaopassar1.classList.remove("hide")
+       
+    }           
+    else{
+        alert("errou")
+        passou = false
+
+    }
+}
+
+
+function nextlevel1(passar){    
+       
+    //sumir fase 1
+    $containerdequestoes1.classList.add("hide")
+    $container1.classList.add("hide")
+
+
+        $containerdequestoes2.classList.remove("hide")
+        
+
+        //passar fase 2
+        $container2.classList.remove("hide")
+
+    
+}
+
+function answer2(n){
+    if (n == 2){
+        alert("Acertou")
+        $botaopassar2.classList.remove("hide")
+       
+    }           
+    else{
+        alert("errou")
+        passou = false
+
+    }
+}
+
+
+
+function nextlevel2(passar){    
+       
+    //sumir fase 1
+    $containerdequestoes2.classList.add("hide")
+    $container2.classList.add("hide")
+
+
+        $containerdequestoes3.classList.remove("hide")
+        //passar fase 2
+        $container3.classList.remove("hide")
+
+    
+}
+
+function answer3(n){
+    if (n == 2){
+        alert("Acertou")
+        $botaopassar3.classList.remove("hide")
+       
+    }           
+    else{
+        alert("errou")
+        passou = false
+
+    }
+}
+
+
+
+
+
+function nextlevel3(passar){    
+       
+    //sumir fase 1
+    $containerdequestoes3.classList.add("hide")
+    $container3.classList.add("hide")
+
+
+        $containerdequestoes4.classList.remove("hide")
+        //passar fase 2
+        $container4.classList.remove("hide")
+
+    
+}
+
+function answer4(n){
+    if (n == 2){
+        alert("Acertou")
+        $botaopassar4.classList.remove("hide")
+       
+    }           
+    else{
+        alert("errou")
+        passou = false
+
+    }
+}
+
+
+
+function nextlevel4(passar){    
+       
+    //sumir fase 1
+    $containerdequestoes4.classList.add("hide")
+    $container4.classList.add("hide")
+
+
+        $containerdequestoes5.classList.remove("hide")
+        //passar fase 2
+        $container5.classList.remove("hide")
+
+    
+}
+
+function answer5(n){
+    if (n == 2){
+        alert("Acertou")
+        $botaopassar5.classList.remove("hide")
+       
+    }           
+    else{
+        alert("errou")
+        passou = false
+
+    }
+}
+
+
+function nextlevel5(passar){    
+       
+    //sumir fase 1
+    $containerdequestoes5.classList.add("hide")
+    $container5.classList.add("hide")
+
+
+        $containerdequestoes6.classList.remove("hide")
+        //passar fase 2
+        $container6.classList.remove("hide")
+
+    
+}
+
+function answer6(n){
+    if (n == 2){
+        alert("Acertou")
+        $botaopassar6.classList.remove("hide")
+       
+    }           
+    else{
+        alert("errou")
+        passou = false
+
+    }
+}
+
+
+
+function nextlevel6(passar){    
+       
+    //sumir fase 1
+    $containerdequestoes6.classList.add("hide")
+    $container6.classList.add("hide")
+
+
+        $containerdequestoes7.classList.remove("hide")
+        //passar fase 2
+        $container7.classList.remove("hide")
+
+    
+}
+
+function answer7(n){
+    if (n == 2){
+        alert("Acertou")
+        $botaopassar7.classList.remove("hide")
+       
+    }           
+    else{
+        alert("errou")
+        passou = false
+
+    }
+}
+
+
+function nextlevel7(passar){    
+       
+    //sumir fase 1
+    $containerdequestoes7.classList.add("hide")
+    $container7.classList.add("hide")
+
+
+        $containerdequestoes8.classList.remove("hide")
+        //passar fase 2
+        $container8.classList.remove("hide")
+
+    
+}
+
+function answer8(n){
+    if (n == 2){
+        alert("Acertou")
+        $botaopassar8.classList.remove("hide")
+       
+    }           
+    else{
+        alert("errou")
+        passou = false
+
+    }
+}
+
+
+function nextlevel8(passar){    
+       
+    //sumir fase 1
+    $containerdequestoes8.classList.add("hide")
+    $container8.classList.add("hide")
+
+
+        $containerdequestoes9.classList.remove("hide")
+        //passar fase 2
+        $container9.classList.remove("hide")
+
+    
+}
+
+function answer9(n){
+    if (n == 2){
+        alert("Acertou")
+        $botaopassar9.classList.remove("hide")
+       
+    }           
+    else{
+        alert("errou")
+        passou = false
+
+    }
+}

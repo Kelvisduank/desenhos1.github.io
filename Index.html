@@ -9,28 +9,10 @@
 </head>
 <body>
     
-    <div class="container"> <!--Bordinha branca que fica envolta das perguntas-->
+    <div class="container hide"> <!--Bordinha branca que fica envolta das perguntas-->
         <div class="container-de-questoes hide">
-            <span class="pergunta">pergunta?</span>
-            <div class="container-de-respostas">
-                <button class="botao resposta" onclick="answer(this.value)" value="1">Resposta 1</button>
-                <button class="botao resposta" onclick="answer(this.value)" value="2">Resposta 2</button>
-                <button class="botao resposta" onclick="answer(this.value)" value="3">Resposta 3</button>
-                <button class="botao resposta" onclick="answer(this.value)" value="4">Resposta 4</button>
-            </div>
-        </div>
-        <div class="container-fase-2"><!--Segundo container de respostas-->
-            <span class="pergunta">pergunta 2</span>
-            <div class="container-de-respostas">
-                <button class="botao resposta" onclick="answer(this.value)" value="1">Resposta 1</button>
-                <button class="botao resposta" onclick="answer(this.value)" value="2">Resposta 2</button>
-                <button class="botao resposta" onclick="answer(this.value)" value="3">Resposta 3</button>
-                <button class="botao resposta" onclick="answer(this.value)" value="4">Resposta 4</button>
-            </div>
-        </div>
-        <div class="container-fase-3"><!--Terceiro container de respostas-->
-            <span class="pergunta">pergunta 3</span>
-            <div class="container-de-respostas">
+            <span class="pergunta">pergunta 1?</span>
+            <div class="container-de-respostas" id="firstQuestion">
                 <button class="botao resposta" onclick="answer(this.value)" value="1">Resposta 1</button>
                 <button class="botao resposta" onclick="answer(this.value)" value="2">Resposta 2</button>
                 <button class="botao resposta" onclick="answer(this.value)" value="3">Resposta 3</button>
@@ -39,10 +21,162 @@
         </div>
         <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
             <button class="botao-comecar botao">Começar!</button>
-            <button class="botao-proxima botao hide">Proxima Pergunta</button>
-            
+            <button class="botao-proxima botao hide" onclick="nextlevel(this.value)" value="true">Proxima Pergunta</button>
         </div>
     </div> 
+   
+   
+    <div class="container1"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes1 hide">
+            <span class="pergunta">pergunta 2?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer1(this.value)" value="1">Resposta 1</button>
+                <button class="botao resposta" onclick="answer1(this.value)" value="2">Resposta 2</button>
+                <button class="botao resposta" onclick="answer1(this.value)" value="3">Resposta 3</button>
+                <button class="botao resposta" onclick="answer1(this.value)" value="4">Resposta 4</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima1 botao hide" onclick="nextlevel1(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
     
+    <div class="container2"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes2 hide">
+            <span class="pergunta">pergunta 3?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer2(this.value)" value="1">Resposta 1</button>
+                <button class="botao resposta" onclick="answer2(this.value)" value="2">Resposta 2</button>
+                <button class="botao resposta" onclick="answer2(this.value)" value="3">Resposta 3</button>
+                <button class="botao resposta" onclick="answer2(this.value)" value="4">Resposta 4</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima2 botao hide" onclick="nextlevel2(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+
+    <div class="container3"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes3 hide">
+            <span class="pergunta">pergunta 4?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer3(this.value)" value="1">Resposta 1</button>
+                <button class="botao resposta" onclick="answer3(this.value)" value="2">Resposta 2</button>
+                <button class="botao resposta" onclick="answer3(this.value)" value="3">Resposta 3</button>
+                <button class="botao resposta" onclick="answer3(this.value)" value="4">Resposta 4</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima3 botao hide" onclick="nextlevel3(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+    <div class="container4"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes4 hide">
+            <span class="pergunta">pergunta 5?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer4(this.value)" value="1">Resposta 1</button>
+                <button class="botao resposta" onclick="answer4(this.value)" value="2">Resposta 2</button>
+                <button class="botao resposta" onclick="answer4(this.value)" value="3">Resposta 3</button>
+                <button class="botao resposta" onclick="answer4(this.value)" value="4">Resposta 4</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima4 botao hide" onclick="nextlevel4(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+
+    <div class="container5"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes5 hide">
+            <span class="pergunta">pergunta 6?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer5(this.value)" value="1">Resposta 1</button>
+                <button class="botao resposta" onclick="answer5(this.value)" value="2">Resposta 2</button>
+                <button class="botao resposta" onclick="answer5(this.value)" value="3">Resposta 3</button>
+                <button class="botao resposta" onclick="answer5(this.value)" value="4">Resposta 4</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima5 botao hide" onclick="nextlevel5(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+
+    
+    <div class="container6"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes6 hide">
+            <span class="pergunta">pergunta 7?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer6(this.value)" value="1">Resposta 1</button>
+                <button class="botao resposta" onclick="answer6(this.value)" value="2">Resposta 2</button>
+                <button class="botao resposta" onclick="answer6(this.value)" value="3">Resposta 3</button>
+                <button class="botao resposta" onclick="answer6(this.value)" value="4">Resposta 4</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima6 botao hide" onclick="nextlevel6(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+        
+    <div class="container7"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes7 hide">
+            <span class="pergunta">pergunta 8?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer7(this.value)" value="1">Resposta 1</button>
+                <button class="botao resposta" onclick="answer7(this.value)" value="2">Resposta 2</button>
+                <button class="botao resposta" onclick="answer7(this.value)" value="3">Resposta 3</button>
+                <button class="botao resposta" onclick="answer7(this.value)" value="4">Resposta 4</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima7 botao hide" onclick="nextlevel7(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+      
+    <div class="container8"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes8 hide">
+            <span class="pergunta">pergunta 9?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer8(this.value)" value="1">Resposta 1</button>
+                <button class="botao resposta" onclick="answer8(this.value)" value="2">Resposta 2</button>
+                <button class="botao resposta" onclick="answer8(this.value)" value="3">Resposta 3</button>
+                <button class="botao resposta" onclick="answer8(this.value)" value="4">Resposta 4</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima8 botao hide" onclick="nextlevel8(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+    
+    <div class="container9"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes9 hide">
+            <span class="pergunta">pergunta 10?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer9(this.value)" value="1">Resposta 1</button>
+                <button class="botao resposta" onclick="answer9(this.value)" value="2">Resposta 2</button>
+                <button class="botao resposta" onclick="answer9(this.value)" value="3">Resposta 3</button>
+                <button class="botao resposta" onclick="answer9(this.value)" value="4">Resposta 4</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima9 botao hide" onclick="nextlevel9(this.value)" value="true">Finalizar</button>
+        </div>
+    </div>
+
 </body>
 </html>
