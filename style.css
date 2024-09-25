@@ -399,3 +399,34 @@ body{
     display: none;
 }
 
+.container-game-over {
+    background-color: #121214;
+    width: 98%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#acabou{
+    background: #7d5b8c;
+    color: #fff;
+    font-size: 42px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 100px;
+    width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: filter 0.2s;
+}

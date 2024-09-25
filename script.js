@@ -1,6 +1,8 @@
 const $botaoComecar = document.querySelector(".botao-comecar")
 const $containerdequestoes = document.querySelector(".container-de-questoes") // ok
 const $botaopassar = document.querySelector(".botao-proxima")
+const $gameover = document.querySelector(".containerGameover")
+
 const $container1 = document.querySelector(".container1") // Corrigido o seletor
 //const $proximafase = document.querySelector(".container-de-questoes1") // Corrigido o seletor
 var passou = false
@@ -58,6 +60,7 @@ var acertou = document.createTextNode("Acertou, bela resposta! agora sua pontua√
 mensagem.appendChild(acertou)
 var acerto = document.getElementById("acertou")
 
+$gameover.classList.add("hide")
 $container3.classList.add("hide")
 $container4.classList.add("hide")
 $container5.classList.add("hide")
@@ -95,6 +98,20 @@ function atualizar(){
     acerto.appendChild(mensagem)
 }
 
+function gameover(){
+    $container1.classList.add("hide")
+    $container2.classList.add("hide")
+    $container3.classList.add("hide")
+    $container4.classList.add("hide")
+    $container5.classList.add("hide")
+    $container6.classList.add("hide")
+    $container7.classList.add("hide")
+    $container8.classList.add("hide")
+    $container9.classList.add("hide")
+
+    $gameover.classList.remove("hide")    
+}
+
 // Verifica resposta
 function answer(n) {
     if (n == 1) {
@@ -104,6 +121,7 @@ function answer(n) {
         atualizar()
     } else {
         passou = false
+        gameover()
     }
 }
 
@@ -133,7 +151,7 @@ function answer1(n1){
     }           
     else{
         passou = false
-
+        gameover()
     }
 }
 
@@ -164,7 +182,7 @@ function answer2(n){
     }           
     else{
         passou = false
-
+        gameover()
     }
 }
 
@@ -194,7 +212,7 @@ function answer3(n){
     }           
     else{
         passou = false
-
+        gameover()
     }
 }
 
@@ -226,7 +244,7 @@ function answer4(n){
     }           
     else{
         passou = false
-
+        gameover()
     }
 }
 
@@ -256,7 +274,7 @@ function answer5(n){
     }           
     else{
         passou = false
-
+        gameover()
     }
 }
 
@@ -284,7 +302,7 @@ function answer6(n){
     }           
     else{
         passou = false
-
+        gameover()
     }
 }
 
@@ -314,7 +332,7 @@ function answer7(n){
     }           
     else{
         passou = false
-
+        gameover()
     }
 }
 
@@ -343,7 +361,7 @@ function answer8(n){
     }           
     else{
         passou = false
-
+        gameover()
     }
 }
 
@@ -372,6 +390,6 @@ function answer9(n){
     }           
     else{
         passou = false
-
+        gameover()
     }
 }
