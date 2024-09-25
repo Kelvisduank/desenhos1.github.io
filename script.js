@@ -2,6 +2,7 @@ const $botaoComecar = document.querySelector(".botao-comecar")
 const $containerdequestoes = document.querySelector(".container-de-questoes") // ok
 const $botaopassar = document.querySelector(".botao-proxima")
 const $gameover = document.querySelector(".containerGameover")
+const $ganhou = document.querySelector(".containerWin")
 
 const $container1 = document.querySelector(".container1") // Corrigido o seletor
 //const $proximafase = document.querySelector(".container-de-questoes1") // Corrigido o seletor
@@ -60,6 +61,7 @@ var acertou = document.createTextNode("Acertou, bela resposta! agora sua pontua√
 mensagem.appendChild(acertou)
 var acerto = document.getElementById("acertou")
 
+$ganhou.classList.add("hide")
 $gameover.classList.add("hide")
 $container3.classList.add("hide")
 $container4.classList.add("hide")
@@ -387,6 +389,13 @@ function answer9(n){
         $botaopassar9.classList.remove("hide")
        
         atualizar()
+
+        $containerdequestoes9.classList.add("hide")
+        $container9.classList.add("hide")
+        $acerto.classList.add("hide")
+        $pnts.classList.add("hide")
+        
+        $ganhou.classList.remove("hide")
     }           
     else{
         passou = false
