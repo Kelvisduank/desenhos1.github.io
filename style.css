@@ -11,10 +11,20 @@ body{
     color: #ffff;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
+
+#acertou{ /*Mensagem de resposta certa*/
+
+}
+
+#pontos{ /*Mensagem de pontos*/
+
+}
+
 .container{
      background-color: #121214;
      width: 98%;
@@ -96,7 +106,15 @@ body{
     align-items: center;
 }
 
+.container-de-questoes1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    gap: 24px
+}
 
 
 .container-de-respostas1{
@@ -133,6 +151,16 @@ body{
     align-items: center;
 }
 
+.container-de-questoes2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 24px
+}
+
 .container-de-respostas3 {
     width: 100%;
     display: grid;
@@ -156,6 +184,15 @@ body{
     align-items: center;
 }
 
+.container-de-questoes3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 24px
+}
 
 .container-de-respostas4 {
     width: 100%;
@@ -180,7 +217,15 @@ body{
     align-items: center;
 }
 
+.container-de-questoes4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    gap: 24px
+}
 
 .container-de-respostas5 {
     width: 100%;
@@ -205,6 +250,15 @@ body{
     align-items: center;
 }
 
+.container-de-questoes5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 24px
+}
 
 
 .container-de-respostas6 {
@@ -230,7 +284,15 @@ body{
     align-items: center;
 }
 
+.container-de-questoes6{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    gap: 24px
+}
 
 .container-de-respostas7 {
     width: 100%;
@@ -255,7 +317,15 @@ body{
     align-items: center;
 }
 
+.container-de-questoes7{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    gap: 24px
+}
 
 .container-de-respostas8 {
     width: 100%;
@@ -280,6 +350,15 @@ body{
     align-items: center;
 }
 
+.container-de-questoes8{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 24px
+}
 
 .container-de-respostas9 {
     width: 100%;
@@ -304,11 +383,19 @@ body{
     align-items: center;
 }
 
+.container-de-questoes9{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-
+    gap: 24px
+}
 
 
 
 .hide{
     display: none;
 }
+

@@ -41,6 +41,22 @@ const $botaopassar9 = document.querySelector(".botao-proxima9")
 const $containerdequestoes9 = document.querySelector(".container-de-questoes9")
 const $container9 = document.querySelector(".container9")
 
+const $acerto = document.querySelector("#acertou")
+
+const $pnts = document.querySelector("#pontos")
+
+//pontuação
+var exibirPontos = document.createElement("h1")
+var pontos = 0
+var exibe = document.createTextNode(pontos)
+exibirPontos.appendChild(exibe)
+var ponto = document.getElementById("pontos")
+
+// mensagem acertou
+var mensagem = document.createElement("h1")
+var acertou = document.createTextNode("Acertou, bela resposta! agora sua pontuação é:")
+mensagem.appendChild(acertou)
+var acerto = document.getElementById("acertou")
 
 $container3.classList.add("hide")
 $container4.classList.add("hide")
@@ -63,14 +79,30 @@ function startGame() {
     
 }
 
+// atualiza pontos
+function atualizar(){
+    pontos += 10
+
+    $pnts.classList.remove("hide")
+    // exibe = document.createTextNode(pontos)
+    exibirPontos.innerHTML = pontos
+    // exibirPontos.appendChild(exibe)
+    ponto.appendChild(exibirPontos)
+
+    
+    $acerto.classList.remove("hide")
+    acertou = document.createTextNode("Acertou, bela resposta! agora sua pontuação é:")
+    acerto.appendChild(mensagem)
+}
+
 // Verifica resposta
 function answer(n) {
     if (n == 1) {
-        alert("Correto")
         passou = true
         $botaopassar.classList.remove("hide")
+        
+        atualizar()
     } else {
-        alert("Errou")
         passou = false
     }
 }
@@ -80,6 +112,8 @@ function nextlevel(passar){
     //sumir fase 1
     $containerdequestoes.classList.add("hide")
     $container.classList.add("hide")
+    $acerto.classList.add("hide")
+    $pnts.classList.add("hide")
 
 
         $containerdequestoes1.classList.remove("hide")
@@ -93,12 +127,11 @@ function nextlevel(passar){
 
 function answer1(n1){
     if (n1 == 3){
-        alert("Acertou")
         $botaopassar1.classList.remove("hide")
-       
+
+        atualizar()
     }           
     else{
-        alert("errou")
         passou = false
 
     }
@@ -110,6 +143,8 @@ function nextlevel1(passar){
     //sumir fase 1
     $containerdequestoes1.classList.add("hide")
     $container1.classList.add("hide")
+    $acerto.classList.add("hide")
+    $pnts.classList.add("hide")
 
 
         $containerdequestoes2.classList.remove("hide")
@@ -123,12 +158,11 @@ function nextlevel1(passar){
 
 function answer2(n){
     if (n == 2){
-        alert("Acertou")
         $botaopassar2.classList.remove("hide")
-       
+        
+        atualizar()
     }           
     else{
-        alert("errou")
         passou = false
 
     }
@@ -141,6 +175,8 @@ function nextlevel2(passar){
     //sumir fase 1
     $containerdequestoes2.classList.add("hide")
     $container2.classList.add("hide")
+    $acerto.classList.add("hide")
+    $pnts.classList.add("hide")
 
 
         $containerdequestoes3.classList.remove("hide")
@@ -152,12 +188,11 @@ function nextlevel2(passar){
 
 function answer3(n){
     if (n == 2){
-        alert("Acertou")
         $botaopassar3.classList.remove("hide")
-       
+        
+        atualizar()
     }           
     else{
-        alert("errou")
         passou = false
 
     }
@@ -172,6 +207,8 @@ function nextlevel3(passar){
     //sumir fase 1
     $containerdequestoes3.classList.add("hide")
     $container3.classList.add("hide")
+    $acerto.classList.add("hide")
+    $pnts.classList.add("hide")
 
 
         $containerdequestoes4.classList.remove("hide")
@@ -183,12 +220,11 @@ function nextlevel3(passar){
 
 function answer4(n){
     if (n == 2){
-        alert("Acertou")
         $botaopassar4.classList.remove("hide")
-       
+        
+        atualizar()
     }           
     else{
-        alert("errou")
         passou = false
 
     }
@@ -201,6 +237,8 @@ function nextlevel4(passar){
     //sumir fase 1
     $containerdequestoes4.classList.add("hide")
     $container4.classList.add("hide")
+    $acerto.classList.add("hide")
+    $pnts.classList.add("hide")
 
 
         $containerdequestoes5.classList.remove("hide")
@@ -212,12 +250,11 @@ function nextlevel4(passar){
 
 function answer5(n){
     if (n == 2){
-        alert("Acertou")
         $botaopassar5.classList.remove("hide")
        
+        atualizar()
     }           
     else{
-        alert("errou")
         passou = false
 
     }
@@ -229,7 +266,8 @@ function nextlevel5(passar){
     //sumir fase 1
     $containerdequestoes5.classList.add("hide")
     $container5.classList.add("hide")
-
+    $acerto.classList.add("hide")
+    $pnts.classList.add("hide")
 
         $containerdequestoes6.classList.remove("hide")
         //passar fase 2
@@ -240,12 +278,11 @@ function nextlevel5(passar){
 
 function answer6(n){
     if (n == 2){
-        alert("Acertou")
         $botaopassar6.classList.remove("hide")
        
+        atualizar()
     }           
     else{
-        alert("errou")
         passou = false
 
     }
@@ -258,6 +295,8 @@ function nextlevel6(passar){
     //sumir fase 1
     $containerdequestoes6.classList.add("hide")
     $container6.classList.add("hide")
+    $acerto.classList.add("hide")
+    $pnts.classList.add("hide")
 
 
         $containerdequestoes7.classList.remove("hide")
@@ -269,12 +308,11 @@ function nextlevel6(passar){
 
 function answer7(n){
     if (n == 2){
-        alert("Acertou")
         $botaopassar7.classList.remove("hide")
        
+        atualizar()
     }           
     else{
-        alert("errou")
         passou = false
 
     }
@@ -286,6 +324,8 @@ function nextlevel7(passar){
     //sumir fase 1
     $containerdequestoes7.classList.add("hide")
     $container7.classList.add("hide")
+    $acerto.classList.add("hide")
+    $pnts.classList.add("hide")
 
 
         $containerdequestoes8.classList.remove("hide")
@@ -297,12 +337,11 @@ function nextlevel7(passar){
 
 function answer8(n){
     if (n == 2){
-        alert("Acertou")
         $botaopassar8.classList.remove("hide")
        
+        atualizar()
     }           
     else{
-        alert("errou")
         passou = false
 
     }
@@ -314,6 +353,8 @@ function nextlevel8(passar){
     //sumir fase 1
     $containerdequestoes8.classList.add("hide")
     $container8.classList.add("hide")
+    $acerto.classList.add("hide")
+    $pnts.classList.add("hide")
 
 
         $containerdequestoes9.classList.remove("hide")
@@ -325,12 +366,11 @@ function nextlevel8(passar){
 
 function answer9(n){
     if (n == 2){
-        alert("Acertou")
         $botaopassar9.classList.remove("hide")
        
+        atualizar()
     }           
     else{
-        alert("errou")
         passou = false
 
     }
