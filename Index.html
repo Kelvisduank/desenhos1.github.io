@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Imagens/Projeto_pda_icone.ico">
+    <script src="script.js" async></script> <!--o ASYNC é pra garantir que o js so vai rodar depois que o html carregar rsrsr-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<body>
+    <!-- Cabeçalho com logo e menu -->
+    <header>
+        <div class="logo">
+        </div>
+        <nav class="menu">
+            <ul>
+            </ul>
+        </nav>
+        <div class="btn-mobile">
+            <ion-icon name="grid-outline"></ion-icon> <!-- Ícone para o menu móvel -->
+        </div>
+    </header>
+    <div class="menu-mobile">
+        <ul>
+        </ul>
+    </div>
+</body>
+
+
+<body>
+    <div id="acertou"></div>
+    <div id="pontos"></div>
+    <div class="container hide"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes hide">
+            <span class="pergunta">1 - Em Pica-Pau, qual foi o primeiro episódio em que o personagem apareceu?</span>
+            <div class="container-de-respostas" id="firstQuestion">
+                <button class="botao resposta" onclick="answer(this.value)" value="1"> A) O Pica-Pau Ataca Novamente </button>
+                <button class="botao resposta" onclick="answer(this.value)" value="2"> B) Picapauzeiro Maluco</button>
+                <button class="botao resposta" onclick="answer(this.value)" value="3"> C) Knock Knock</button>
+                <button class="botao resposta" onclick="answer(this.value)" value="4"> D) Pica-Pau Biruta</button>
+            </div>
+        </div>
+        <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+            <button class="botao-comecar botao">Começar!</button>
+            <button class="botao-proxima botao hide" onclick="nextlevel(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div> 
+   
+   
+    <div class="container1"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes1 hide">
+            <span class="pergunta">2 - Em "Tom & Jerry", qual foi o nome original da série quando estreou pela primeira vez em 1940?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer1(this.value)" value="1">A) Jerry e o Gato </button>
+                <button class="botao resposta" onclick="answer1(this.value)" value="2">B) Gato Espertalhão</button>
+                <button class="botao resposta" onclick="answer1(this.value)" value="3">C) Puss Gets the Boot </button>
+                <button class="botao resposta" onclick="answer1(this.value)" value="4">D) O Gato Veloz</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima1 botao hide" onclick="nextlevel1(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+    
+    <div class="container2"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes2 hide">
+            <span class="pergunta">3 - No desenho "X-Men" dos anos 90, qual era o nome do vilão alienígena que causava muitos problemas para os mutantes?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer2(this.value)" value="1">A) Magneto</button>
+                <button class="botao resposta" onclick="answer2(this.value)" value="2">B) Apocalipse</button>
+                <button class="botao resposta" onclick="answer2(this.value)" value="3">C) Mojo</button>
+                <button class="botao resposta" onclick="answer2(this.value)" value="4">D) Sinistro</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima2 botao hide" onclick="nextlevel2(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+
+    <div class="container3"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes3 hide">
+            <span class="pergunta">4 - Em "Super Choque", como Virgil Hawkins adquire seus poderes?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer3(this.value)" value="1">A) É atingido por um raio</button>
+                <button class="botao resposta" onclick="answer3(this.value)" value="2">B) Inala um composto químico durante uma briga de gangues</button>
+                <button class="botao resposta" onclick="answer3(this.value)" value="3">C) Toca em um artefato alienígena </button>
+                <button class="botao resposta" onclick="answer3(this.value)" value="4">D) É exposto a um gás mutagênico </button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima3 botao hide" onclick="nextlevel3(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+    <div class="container4"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes4 hide">
+            <span class="pergunta">5 - Em "Os Flintstones", qual é o nome completo da cidade onde Fred e sua família moram?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer4(this.value)" value="1">A) Rockville</button>
+                <button class="botao resposta" onclick="answer4(this.value)" value="2">B) Bedrock </button>
+                <button class="botao resposta" onclick="answer4(this.value)" value="3">C) Stoneville</button>
+                <button class="botao resposta" onclick="answer4(this.value)" value="4">D) Rockville</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima4 botao hide" onclick="nextlevel4(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+
+    <div class="container5"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes5 hide">
+            <span class="pergunta">6 - No programa infantil "Cocoricó", além de Júlio, qual personagem aparece mais frequentemente para interagir com os animais?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer5(this.value)" value="1">A) Pedro</button>
+                <button class="botao resposta" onclick="answer5(this.value)" value="2">B) Alípio</button>
+                <button class="botao resposta" onclick="answer5(this.value)" value="3">C) Oriba</button>
+                <button class="botao resposta" onclick="answer5(this.value)" value="4">D) Zazá</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima5 botao hide" onclick="nextlevel5(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+
+    
+    <div class="container6"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes6 hide">
+            <span class="pergunta">7 - Em "Castelo Rá-Tim-Bum", qual é o nome da personagem que aparece dentro de um relógio e sempre faz contagem regressiva??</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer6(this.value)" value="1">A) Morgana</button>
+                <button class="botao resposta" onclick="answer6(this.value)" value="2">B) Celeste</button>
+                <button class="botao resposta" onclick="answer6(this.value)" value="3">C) Godofredo</button>
+                <button class="botao resposta" onclick="answer6(this.value)" value="4">D) Penélope</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima6 botao hide" onclick="nextlevel6(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+        
+    <div class="container7"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes7 hide">
+            <span class="pergunta">8 - Em "Os Jetsons", qual é o trabalho de George Jetson?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer7(this.value)" value="1">A) Engenheiro mecânico</button>
+                <button class="botao resposta" onclick="answer7(this.value)" value="2">B) Operador de botões em uma fábrica</button>
+                <button class="botao resposta" onclick="answer7(this.value)" value="3">C) Piloto espacial</button>
+                <button class="botao resposta" onclick="answer7(this.value)" value="4">D) Criador de robôs</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima7 botao hide" onclick="nextlevel7(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+      
+    <div class="container8"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes8 hide">
+            <span class="pergunta">9 - Nos "Looney Tunes", qual o nome completo de Patolino?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer8(this.value)" value="1">A) Daffy Horace Duck</button>
+                <button class="botao resposta" onclick="answer8(this.value)" value="2">B) Daffy Percival Duck</button>
+                <button class="botao resposta" onclick="answer8(this.value)" value="3">C) Daffy Sheldon Duck</button>
+                <button class="botao resposta" onclick="answer8(this.value)" value="4">D) Daffy Edgar Duck</button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima8 botao hide" onclick="nextlevel8(this.value)" value="true">Proxima Pergunta</button>
+        </div>
+    </div>
+
+    
+    <div class="container9"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-de-questoes9 hide">
+            <span class="pergunta">10 - Em "Coragem, o Cão Covarde", qual é o nome da cidade onde Coragem e seus donos moram?</span>
+            <div class="container-de-respostas" id="secondQuestion">
+                <button class="botao resposta" onclick="answer9(this.value)" value="1">A) Terra do Medo</button>
+                <button class="botao resposta" onclick="answer9(this.value)" value="2">B) Lugar Nenhum</button>
+                <button class="botao resposta" onclick="answer9(this.value)" value="3">C) Vazio</button>
+                <button class="botao resposta" onclick="answer9(this.value)" value="4">D) Deserto de Lugar </button>
+            </div>
+            </div>
+            <div class="controle-container"> <!--Botão onde ficam o começar/proxima pergunta-->
+              <br>
+                <button class="botao-proxima9 botao hide" onclick="nextlevel9(this.value)" value="true">Finalizar</button>
+        </div>
+    </div>
+
+    <div class="containerGameover"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-game-over hide">
+            <div class="game-over">
+                <h1 id="acabou">Game over</h1>
+            </div>
+            <p>Infelizmente não era essa a resposta!</p>
+        </div>
+    </div>
+
+    <div class="containerWin"> <!--Bordinha branca que fica envolta das perguntas-->
+        <div class="container-win hide">
+            <div class="win">
+                <h1 id="ganhou">Parabéns, que isso sabe muito!</h1>
+            </div>
+            <p>Pontuação total atingida foi 100 pontos!</p>
+        </div>
+    </div>
+    
+    <!-- Adicionando a música -->
+    <audio id="background-music" loop>
+        <source src="Music/Tomandjerry.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento audio.
+    </audio>
+
+</body>
+</html>
