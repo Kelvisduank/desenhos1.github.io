@@ -1,63 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #4CAF50;
-}
-
-.developers-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.developer-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    text-align: center;
+    background-color: #4CAF50;
     padding: 20px;
+    color: white;
+    text-align: center;
 }
 
-.developer-card img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 15px;
+/* Botão para voltar à tela inicial */
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.home-button:hover {
+    background-color: #45a049;
 }
 
-p {
-    font-size: 1.1em;
-    color: #666;
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-    .developers-container {
+/* Cada card ocupa 30% da largura da tela com margens */
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(30% - 20px); /* Largura dos cards para 3 por linha */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/* Responsividade - 3 cards por linha em telas maiores */
+@media (min-width: 768px) {
+    .card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(30% - 20px); /* 3 cards por linha */
+    }
+}
+
+/* Responsividade - 1 card por linha em telas menores */
+@media (max-width: 767px) {
+    .card-container {
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Centraliza os cards na coluna */
+    }
+
+    .card {
+        width: 90%;  /* Cards ocupam 90% da tela em dispositivos móveis */
+        margin: 10px 0;  /* Margem em cima e embaixo */
     }
 }

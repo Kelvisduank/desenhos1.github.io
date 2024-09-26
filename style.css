@@ -541,6 +541,22 @@ body {
     display: block; /* Para garantir que o link ocupe toda a área clicável */
 }
 
+/* Estilo para o botão no canto superior direito */
+.botao-direita {
+    position: fixed;
+    top: 10px;  /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-direita:hover {
+    background-color: #45a049; /* Efeito hover */
+}
 
 /* Ajuste do layout para telas menores:*/
 @media (max-width: 768px) {
