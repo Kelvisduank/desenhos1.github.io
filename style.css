@@ -547,7 +547,7 @@ body {
     top: 10px;  /* Distância do topo */
     right: 10px; /* Distância da direita */
     padding: 10px 20px;
-    background-color: #4CAF50; /* Cor de fundo */
+    background-color: #7d5b8c; /* Cor de fundo */
     color: white;
     border: none;
     border-radius: 5px;
@@ -555,7 +555,7 @@ body {
 }
 
 .botao-direita:hover {
-    background-color: #45a049; /* Efeito hover */
+    background-color: #cc8fe6; /* Efeito hover */
 }
 
 /* Ajuste do layout para telas menores:*/

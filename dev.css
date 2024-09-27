@@ -70,7 +70,7 @@ header {
 }
 
 .drawing-icon {
-    width: 50px; /* Largura do círculo */
+    width: 80px; /* Largura do círculo */
     height: 50px; /* Altura do círculo */
     border-radius: 50%; /* Faz a imagem ficar circular */
     overflow: hidden; /* Esconde partes da imagem que saem do círculo */

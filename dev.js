@@ -15,8 +15,12 @@ const developers = {
     dev3: {
         name: "Alisson Nunes",
         description: "Oi, meu nome é Alisson, tenho 20 anos, conclui o ensino médio, atualmente sou aluno do PDA e estou ansioso para faculdade e meu 1o emprego como programador, programar para mim é um sonho, graças aos incentivos do meu pai fui me fascinando em tecnologia e descobrindo o mundo da programação e agora aqui estou...",
-        socials: `<a href="https://www.linkedin.com/in/alisson-samuel-994065247/" target="_blank">LinkedIn</a>
-                  <a href="https://github.com/alissonn17" target="_blank">GitHub</a>`
+        socials: ` <a href="https://www.linkedin.com/in/alisson-samuel-994065247/" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/alissonn17" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>`
     },
     dev4: {
         name: "Maria Eduarda Souza",
@@ -30,12 +34,7 @@ const developers = {
         socials: `<a href="https://www.linkedin.com/in/tayssa-ramos-6523a2318/" target="_blank">LinkedIn</a>
                   <a href="https://github.com/dev5" target="_blank">GitHub</a>`
     },
-    dev6: {
-        name: "Kaique Silvério",
-        description: "Mini apresentação",
-        socials: `<a href="https://linkedin.com/in/dev6" target="_blank">LinkedIn</a>
-                  <a href="https://github.com/dev6" target="_blank">GitHub</a>`
-    }
+   
 };
 
 // Função para abrir o modal

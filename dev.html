@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolvedores</title>
     <link rel="stylesheet" href="dev.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -36,7 +38,7 @@
         <div class="card" onclick="openModal('dev3')">
             <div class="info-container">
                 <div class="drawing-icon">
-                    <img src="imagens/tom_jerry.jpg" alt="Desenho favorito de Alisson">
+                    <img src="imagens/tom_and_jerry_PNG5.png" alt="Desenho favorito de Alisson">
                 </div>
                 <img src="imagens/alisson.jpeg" alt="alisson" class="developer-photo">
             </div>
@@ -46,7 +48,7 @@
         <div class="card" onclick="openModal('dev4')">
             <div class="info-container">
                 <div class="drawing-icon">
-                    <img src="imagens/desenho_maria.png" alt="Desenho favorito de Maria Eduarda">
+                    <img src="imagens/scooby.jfif" alt="Desenho favorito de Maria Eduarda">
                 </div>
                 <img src="imagens/maria.jpeg" alt="Maria" class="developer-photo">
             </div>
@@ -56,23 +58,14 @@
         <div class="card" onclick="openModal('dev5')">
             <div class="info-container">
                 <div class="drawing-icon">
-                    <img src="imagens/desenho_tayssa.png" alt="Desenho favorito de Tayssa">
+                    <img src="imagens/tom_and_jerry_PNG5.png" alt="Desenho favorito de Tayssa">
                 </div>
                 <img src="imagens/tayssa.jpeg" alt="Tayssa" class="developer-photo">
             </div>
             <h3>Tayssa Ramos</h3>
             <p>Especialidade: Full-stack</p>
         </div>
-        <div class="card" onclick="openModal('dev6')">
-            <div class="info-container">
-                <div class="drawing-icon">
-                    <img src="imagens/desenho_kaique.png" alt="Desenho favorito de Kaique">
-                </div>
-                <img src="imagens/tayssa.jpeg" alt="Kaique" class="developer-photo">
-            </div>
-            <h3>Kaique Silvério</h3>
-            <p>Especialidade: Full-stack</p>
-        </div>
+       
     </div>
 
     <!-- Modal -->
@@ -81,9 +74,10 @@
             <span class="close" onclick="closeModal()">&times;</span>
             <h2 id="modal-title"></h2>
             <p id="modal-description"></p>
-            <div id="modal-socials"></div>
+            <div id="modal-socials"></div> <!-- Links com ícones serão injetados aqui -->
         </div>
     </div>
+    
 
     <script src="dev.js"></script>
 </body>
