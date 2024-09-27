@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #7d5b8c;
     padding: 20px;
     color: white;
     text-align: center;
@@ -17,7 +17,7 @@ header {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: #4CAF50;
+    background-color: #7d5b8c;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -26,55 +26,61 @@ header {
 }
 
 .home-button:hover {
-    background-color: #45a049;
+    background-color: #c27edf;
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    gap: 20px; /* Espaçamento entre os cards */
     margin-top: 20px;
+    padding: 0 20px; /* Adiciona espaçamento nas laterais */
 }
 
-/* Cada card ocupa 30% da largura da tela com margens */
+/* Cada card ocupa 100% da coluna */
 .card {
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    margin: 10px;
-    width: calc(30% - 20px); /* Largura dos cards para 3 por linha */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s; /* Transição suave para hover */
 }
 
+/* Efeito de hover para os cards */
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
+}
+
+/* Ajusta as imagens para que fiquem quadradas e alinhadas */
 .card img {
     width: 100%;
-    border-radius: 5px;
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Faz a imagem cobrir todo o espaço, mantendo a proporção */
 }
 
-
-/* Responsividade - 3 cards por linha em telas maiores */
-@media (min-width: 768px) {
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
     .card-container {
-        flex-wrap: wrap;
-        justify-content: center;
+        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
     }
 
     .card {
-        width: calc(30% - 20px); /* 3 cards por linha */
+        width: 90%; /* Os cards ocupam 90% da tela em dispositivos móveis */
     }
 }
 
-/* Responsividade - 1 card por linha em telas menores */
-@media (max-width: 767px) {
+/* Responsividade para telas médias */
+@media (min-width: 601px) and (max-width: 900px) {
     .card-container {
-        flex-direction: column;
-        align-items: center; /* Centraliza os cards na coluna */
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
     }
+}
 
-    .card {
-        width: 90%;  /* Cards ocupam 90% da tela em dispositivos móveis */
-        margin: 10px 0;  /* Margem em cima e embaixo */
+/* Manter 3 colunas em telas maiores */
+@media (min-width: 901px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas grandes */
     }
 }
