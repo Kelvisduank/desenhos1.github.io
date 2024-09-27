@@ -26,12 +26,14 @@ header {
 }
 
 .home-button:hover {
-    background-color: #c27edf;
+    background-color: #cc8fe6;
 }
 
 .card-container {
     display: grid;
+    color: white;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    grid-template-rows: repeat(2, auto); /* 2 linhas automáticas */
     gap: 20px; /* Espaçamento entre os cards */
     margin-top: 20px;
     padding: 0 20px; /* Adiciona espaçamento nas laterais */
@@ -39,13 +41,22 @@ header {
 
 /* Cada card ocupa 100% da coluna */
 .card {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
+    background-color: #7d5b8c;
+    border: 1px solid rgba(221, 221, 221, 0.5); /* Borda com 50% de opacidade */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s; /* Transição suave para hover */
+    position: relative; /* Faz a imagem caber dentro do espaço, mantendo a proporção */
+}
+
+/* Estilização para imagens dos desenvolvedores */
+.developer-photo {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Arredonda as bordas da foto do desenvolvedor */
+    max-height: 150px; /* Altura máxima para evitar distorção */
+    object-fit:contain; 
 }
 
 /* Efeito de hover para os cards */
@@ -53,12 +64,63 @@ header {
     transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
 }
 
-/* Ajusta as imagens para que fiquem quadradas e alinhadas */
-.card img {
-    width: 100%;
-    height: 200px; /* Altura fixa para as imagens */
-    object-fit: cover; /* Faz a imagem cobrir todo o espaço, mantendo a proporção */
+.info-container {
+    display: flex; /* Permite que os itens dentro sejam dispostos em linha */
+    align-items: center; /* Centraliza verticalmente os itens */
 }
+
+.drawing-icon {
+    width: 50px; /* Largura do círculo */
+    height: 50px; /* Altura do círculo */
+    border-radius: 50%; /* Faz a imagem ficar circular */
+    overflow: hidden; /* Esconde partes da imagem que saem do círculo */
+    border: 2px solid #4CAF50; /* Borda ao redor do círculo, opcional */
+    margin-right: 10px; /* Espaçamento entre a imagem do desenho e a foto do desenvolvedor */
+}
+
+.drawing-icon img {
+    width: 100%; /* Faz a imagem ocupar toda a área do círculo */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço abaixo da imagem */
+}
+
+/* Estilos do modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fixo na tela */
+    z-index: 1; /* Fica acima de outros conteúdos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgb(0, 0, 0); /* Cor de fundo */
+    background-color: rgba(0, 0, 0, 0.4); /* Cor de fundo com opacidade */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Espaçamento na parte superior e centralizado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+    max-width: 600px; /* Largura máxima do modal */
+}
+
+.close {
+    color: #aaa;
+    float: right; /* Alinha à direita */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /* Responsividade para telas pequenas */
 @media (max-width: 600px) {

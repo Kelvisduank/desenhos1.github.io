@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,48 +8,83 @@
 </head>
 <body>
     <header>
-        <h1>Equipe de Desenvolvedores</h1>
+        <h1>Desenvolvedores</h1>
+        <a href="index.html" class="home-button">Voltar</a>
     </header>
 
-    <!-- Botão para voltar à tela inicial -->
-    <a href="index.html" class="home-button">Voltar para a Tela Inicial</a>
-
-    <!-- Container para os cards -->
     <div class="card-container">
-        
-        <div class="card">
-            <img src="imagens/kelvis.jpeg" >
-            <h2>Kelvis Xakriabá</h2>
+        <div class="card" onclick="openModal('dev1')">
+            <div class="info-container">
+                <div class="drawing-icon">
+                    <img src="imagens/desenho_kelvis.png" alt="Desenho favorito de Kelvis">
+                </div>
+                <img src="imagens/kelvis.jpeg" alt="kelvis" class="developer-photo">
+            </div>
+            <h3>Kelvis Duank</h3>
             <p>Especialidade: Full-stack</p>
         </div>
-        <div class="card">
-            <img src="imagens/kaue.jpeg" alt="Foto do Desenvolvedor 2">
-            <h2>Kauê Santos</h2>
+        <div class="card" onclick="openModal('dev2')">
+            <div class="info-container">
+                <div class="drawing-icon">
+                    <img src="imagens/desenho_kaue.png" alt="Desenho favorito de Kaue">
+                </div>
+                <img src="imagens/kaue.jpeg" alt="kaue" class="developer-photo">
+            </div>
+            <h3>Kaue</h3>
             <p>Especialidade: Full-stack</p>
         </div>
-        <div class="card">
-            <img src="imagens/alisson.jpeg" alt="Foto do Desenvolvedor 3">
-            <h2>Alisson Samuel</h2>
+        <div class="card" onclick="openModal('dev3')">
+            <div class="info-container">
+                <div class="drawing-icon">
+                    <img src="imagens/desenho_alisson.png" alt="Desenho favorito de Alisson">
+                </div>
+                <img src="imagens/alisson.jpeg" alt="alisson" class="developer-photo">
+            </div>
+            <h3>Alisson Nunes</h3>
             <p>Especialidade: Full-stack</p>
         </div>
-
-        <div class="card">
-            <img src="imagens/maria.jpeg" alt="Foto do Desenvolvedor 4">
-            <h2>Maria Eduarda Souza</h2>
-            <p>Especialidade: Front-end</p>
+        <div class="card" onclick="openModal('dev4')">
+            <div class="info-container">
+                <div class="drawing-icon">
+                    <img src="imagens/desenho_maria.png" alt="Desenho favorito de Maria Eduarda">
+                </div>
+                <img src="imagens/maria.jpeg" alt="Maria" class="developer-photo">
+            </div>
+            <h3>Maria Eduarda Souza</h3>
+            <p>Especialidade: Full-stack</p>
         </div>
-        <div class="card">
-            <img src="dev5.jpg" alt="Foto do Desenvolvedor 5">
-            <h2>Tayssa Ramos</h2>
-            <p>Especialidade: Front-end</p>
+        <div class="card" onclick="openModal('dev5')">
+            <div class="info-container">
+                <div class="drawing-icon">
+                    <img src="imagens/desenho_tayssa.png" alt="Desenho favorito de Tayssa">
+                </div>
+                <img src="imagens/tayssa.jpeg" alt="Tayssa" class="developer-photo">
+            </div>
+            <h3>Tayssa Ramos</h3>
+            <p>Especialidade: Full-stack</p>
         </div>
-        <div class="card">
-            <img src="dev6.jpg" alt="Foto do Desenvolvedor 6">
-            <h2>Kaique Silvério</h2>
-            <p>Especialidade: UI/UX</p>
+        <div class="card" onclick="openModal('dev6')">
+            <div class="info-container">
+                <div class="drawing-icon">
+                    <img src="imagens/desenho_kaique.png" alt="Desenho favorito de Kaique">
+                </div>
+                <img src="imagens/tayssa.jpeg" alt="Kaique" class="developer-photo">
+            </div>
+            <h3>Kaique Silvério</h3>
+            <p>Especialidade: Full-stack</p>
         </div>
     </div>
 
-    
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <div id="modal-socials"></div>
+        </div>
+    </div>
+
+    <script src="dev.js"></script>
 </body>
 </html>
