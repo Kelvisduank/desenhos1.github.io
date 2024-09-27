@@ -74,7 +74,7 @@ header {
     height: 50px; /* Altura do círculo */
     border-radius: 50%; /* Faz a imagem ficar circular */
     overflow: hidden; /* Esconde partes da imagem que saem do círculo */
-    border: 2px solid #4CAF50; /* Borda ao redor do círculo, opcional */
+    border: 2px solid #fc04c6; /* Borda ao redor do círculo*/
     margin-right: 10px; /* Espaçamento entre a imagem do desenho e a foto do desenvolvedor */
 }
 
