@@ -100,7 +100,9 @@ function atualizar(){
     acerto.appendChild(mensagem)
 }
 
-function gameover(){
+// ... [todo o seu código anterior]
+
+function gameover() {
     $container1.classList.add("hide")
     $container2.classList.add("hide")
     $container3.classList.add("hide")
@@ -111,21 +113,34 @@ function gameover(){
     $container8.classList.add("hide")
     $container9.classList.add("hide")
 
-    $gameover.classList.remove("hide")    
+    $gameover.classList.remove("hide")
+    
+    // Adicionando a lógica para continuar para a próxima pergunta
+    setTimeout(() => {
+        $gameover.classList.add("hide");
+        nextlevel(); // ou nextlevel1(), nextlevel2(), etc., conforme a fase que você está.
+    }, 2000); // Esconde o game over após 2 segundos
 }
 
 // Verifica resposta
 function answer(n) {
     if (n == 1) {
-        passou = true
-        $botaopassar.classList.remove("hide")
-        
-        atualizar()
+        passou = true;
+        $botaopassar.classList.remove("hide");
+        atualizar();
     } else {
-        passou = false
-        gameover()
+        passou = false;
+        gameover();
     }
 }
+
+
+function nextlevel() {
+    // lógica para passar para a próxima fase, dependendo da fase atual.
+    // Certifique-se de chamar a função correspondente (nextlevel1, nextlevel2, etc.)
+}
+
+
 
 function nextlevel(passar){    
        
