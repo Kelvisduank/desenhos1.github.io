@@ -1,12 +1,10 @@
 const $botaoComecar = document.querySelector(".botao-comecar")
-const $containerdequestoes = document.querySelector(".container-de-questoes") // ok
+const $containerdequestoes = document.querySelector(".container-de-questoes")
 const $botaopassar = document.querySelector(".botao-proxima")
 const $gameover = document.querySelector(".containerGameover")
 const $ganhou = document.querySelector(".containerWin")
 
-const $container1 = document.querySelector(".container1") // Corrigido o seletor
-//const $proximafase = document.querySelector(".container-de-questoes1") // Corrigido o seletor
-var passou = false
+const $container1 = document.querySelector(".container1")
 const $container = document.querySelector(".container")
 const $containerdequestoes1 = document.querySelector(".container-de-questoes1")
 const $botaopassar1 = document.querySelector(".botao-proxima1")
@@ -14,7 +12,6 @@ const $container2 = document.querySelector(".container2")
 const $containerdequestoes2 = document.querySelector(".container-de-questoes2")
 $botaoComecar.addEventListener("click", startGame)
 const $botaopassar2 = document.querySelector(".botao-proxima2")
-
 
 const $botaopassar3 = document.querySelector(".botao-proxima3")
 const $containerdequestoes3 = document.querySelector(".container-de-questoes3")
@@ -45,21 +42,55 @@ const $containerdequestoes9 = document.querySelector(".container-de-questoes9")
 const $container9 = document.querySelector(".container9")
 
 const $acerto = document.querySelector("#acertou")
-
 const $pnts = document.querySelector("#pontos")
 
-//pontuação
-var exibirPontos = document.createElement("h1")
+// Variável para controlar se a pergunta foi respondida corretamente
+let tentouResponder = false;
+
+// Pontuação
 var pontos = 0
+var exibirPontos = document.createElement("h1")
 var exibe = document.createTextNode(pontos)
 exibirPontos.appendChild(exibe)
 var ponto = document.getElementById("pontos")
 
-// mensagem acertou
+// Mensagem acertou
 var mensagem = document.createElement("h1")
 var acertou = document.createTextNode("Acertou, bela resposta! agora sua pontuação é:")
 mensagem.appendChild(acertou)
 var acerto = document.getElementById("acertou")
+
+// Escondendo elementos no início
+$ganhou.classList.add("hide")
+$gameover.classList.add("hide")
+$container3.classList.add("hide")
+$container4.classList.add("hide")
+$container5.classList.add("hide")
+$container6.classList.add("hide")
+$container7.classList.add("hide")
+$container8.classList.add("hide")
+$container9.classList.add("hide")
+$container2.classList.add("hide")
+$container1.classList.remove("hide")
+$container.classList.remove("hide")
+$container1.classList.add("hide")
+
+// Atualiza pontos somente se não errou antes
+function atualizar() {
+    if (!tentouResponder) {
+        pontos += 10;
+        tentouResponder = true; // Marca como respondida corretamente
+    }
+
+    $pnts.classList.remove("hide")
+    exibirPontos.innerHTML = pontos
+    ponto.appendChild(exibirPontos)
+
+    $acerto.classList.remove("hide")
+    acertou = document.createTextNode("Acertou, bela resposta! agora sua pontuação é:")
+    acerto.appendChild(mensagem)
+}
+
 
 $ganhou.classList.add("hide")
 $gameover.classList.add("hide")
@@ -100,7 +131,7 @@ function atualizar(){
     acerto.appendChild(mensagem)
 }
 
-// ... [todo o seu código anterior]
+
 
 function gameover() {
     $container1.classList.add("hide")
@@ -137,7 +168,7 @@ function answer(n) {
 
 function nextlevel() {
     // lógica para passar para a próxima fase, dependendo da fase atual.
-    // Certifique-se de chamar a função correspondente (nextlevel1, nextlevel2, etc.)
+    
 }
 
 
