@@ -19,4 +19,4 @@ Este é um quiz interativo que testa seus conhecimentos sobre desenhos animados 
 
 1. Clone o repositório para a sua máquina local:
    ```bash
-   git clone https://github.com/Kelvisduank/m1---Projeto-Final-PDA
+   git clone https://github.com/Kelvisduank/desenhos1.github.io.git
