@@ -44,6 +44,12 @@ const $container9 = document.querySelector(".container9")
 const $acerto = document.querySelector("#acertou")
 const $pnts = document.querySelector("#pontos")
 
+let nomeusuario = prompt("Olá!!! bem vindo ao Quiz! insira seu nome")
+
+
+
+
+
 // Variável para controlar se a pergunta foi respondida corretamente
 let tentouResponder = false;
 
@@ -75,6 +81,7 @@ $container1.classList.remove("hide")
 $container.classList.remove("hide")
 $container1.classList.add("hide")
 
+
 // Atualiza pontos somente se não errou antes
 function atualizar() {
     if (!tentouResponder) {
@@ -90,6 +97,11 @@ function atualizar() {
     acertou = document.createTextNode("Acertou, bela resposta! agora sua pontuação é:")
     acerto.appendChild(mensagem)
 }
+
+
+
+
+
 
 
 $ganhou.classList.add("hide")
@@ -479,3 +491,6 @@ window.addEventListener('load', function() {
         });
     });
 });
+
+
+document.getElementById("nomeusuario").textContent = nomeusuario;
