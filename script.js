@@ -134,6 +134,7 @@ function atualizar(){
 
 
 function gameover() {
+    $container.classList.add("hide")
     $container1.classList.add("hide")
     $container2.classList.add("hide")
     $container3.classList.add("hide")
@@ -146,11 +147,11 @@ function gameover() {
 
     $gameover.classList.remove("hide")
     
-    // Adicionando a lógica para continuar para a próxima pergunta
-    setTimeout(() => {
-        $gameover.classList.add("hide");
-        nextlevel(); // ou nextlevel1(), nextlevel2(), etc., conforme a fase que você está.
-    }, 2000); // Esconde o game over após 2 segundos
+    // // Adicionando a lógica para continuar para a próxima pergunta
+    // setTimeout(() => {
+    //     $gameover.classList.add("hide");
+    //     nextlevel(); // ou nextlevel1(), nextlevel2(), etc., conforme a fase que você está.
+    // }, 2000); // Esconde o game over após 2 segundos
 }
 
 // Verifica resposta
