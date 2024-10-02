@@ -158,6 +158,10 @@ function gameover() {
     $container9.classList.add("hide")
 
     $gameover.classList.remove("hide")
+
+    setTimeout(function() {
+        location.reload(); // Recarrega a página
+    }, 5000);
     
     // // Adicionando a lógica para continuar para a próxima pergunta
     // setTimeout(() => {
