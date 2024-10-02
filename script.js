@@ -168,7 +168,7 @@ function gameover() {
 
 // Verifica resposta
 function answer(n) {
-    if (n == 1) {
+    if (n == 3) {
         passou = true;
         $botaopassar.classList.remove("hide");
         atualizar();
@@ -236,7 +236,7 @@ function nextlevel1(passar){
 }
 
 function answer2(n){
-    if (n == 2){
+    if (n == 3){
         $botaopassar2.classList.remove("hide")
         
         atualizar()
@@ -266,7 +266,7 @@ function nextlevel2(passar){
 }
 
 function answer3(n){
-    if (n == 2){
+    if (n == 4){
         $botaopassar3.classList.remove("hide")
         
         atualizar()
@@ -328,7 +328,7 @@ function nextlevel4(passar){
 }
 
 function answer5(n){
-    if (n == 2){
+    if (n == 3){
         $botaopassar5.classList.remove("hide")
        
         atualizar()
@@ -356,7 +356,7 @@ function nextlevel5(passar){
 }
 
 function answer6(n){
-    if (n == 2){
+    if (n == 1){
         $botaopassar6.classList.remove("hide")
        
         atualizar()
@@ -444,7 +444,7 @@ function nextlevel8(passar){
 }
 
 function answer9(n){
-    if (n == 2){
+    if (n == 1){
         $botaopassar9.classList.remove("hide")
        
         atualizar()
