@@ -146,3 +146,6 @@ header {
         grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas grandes */
     }
 }
+.image-question{
+    width: 20rem;
+}
