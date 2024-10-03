@@ -453,7 +453,7 @@ p{
 /***** imagem fundo ******/
 
 body {
-    background-image: url('Imagens/Projeto_pda2.jpeg'); 
+    background-image: url('imagens/projeto_pda2.jpeg'); 
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
