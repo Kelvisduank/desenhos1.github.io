@@ -44,7 +44,7 @@ const $container9 = document.querySelector(".container9")
 const $acerto = document.querySelector("#acertou")
 const $pnts = document.querySelector("#pontos")
 
-let nomeusuario = prompt("Olá!!! bem vindo ao Quiz! insira seu nome")
+let nomeusuario = prompt("Bem vindo ao Quiz! Insira seu nome:")
 
 
 

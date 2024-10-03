@@ -612,6 +612,13 @@ body {
     }
 }
 
+
+.image-question:hover{
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+    
+}
+
 .image-question{
 width: 9rem;
 border-radius: 10px;
